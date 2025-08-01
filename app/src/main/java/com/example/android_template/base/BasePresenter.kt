@@ -1,11 +1,17 @@
 package com.example.android_template.base
 
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.SupervisorJob
+import kotlinx.coroutines.cancel
 import java.lang.ref.WeakReference
 
 
 abstract class BasePresenter<V> {
     
     private var viewRef: WeakReference<V>? = null
+    
+    protected val presenterScope = CoroutineScope(SupervisorJob() + Dispatchers.Main)
     
     fun attachView(view: V) {
         viewRef = WeakReference(view)
@@ -14,6 +20,8 @@ abstract class BasePresenter<V> {
     fun detachView() {
         viewRef?.clear()
         viewRef = null
+        
+        presenterScope.cancel()
     }
     
     protected fun getView(): V? {

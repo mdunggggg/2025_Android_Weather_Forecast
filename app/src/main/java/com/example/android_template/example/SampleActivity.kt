@@ -9,24 +9,27 @@ import com.example.android_template.R
 import com.example.android_template.base.BaseActivity
 import com.example.android_template.databinding.ActivitySampleBinding
 
-class SampleActivity : BaseActivity<ActivitySampleBinding>(), ExampleContract.View {
+class SampleActivity : BaseActivity<ActivitySampleBinding, ExamplePresenter>(), ExampleContract.View {
 
-    private lateinit var presenter: ExamplePresenter
     private lateinit var repository: ITeamRepository
 
     override fun getViewBinding(): ActivitySampleBinding {
         return ActivitySampleBinding.inflate(layoutInflater)
     }
 
+    override fun initializePresenter() {
+        presenter = ExamplePresenter(TeamRepository())
+    }
+
     override fun setupViews() {
         repository = TeamRepository()
         presenter = ExamplePresenter(repository)
-        presenter.attachView(this)
+        presenter?.attachView(this)
     }
 
     override fun setupListeners() {
         binding.loadMyTeamsButton.setOnClickListener {
-            presenter.loadMyTeams()
+            presenter?.loadMyTeams()
         }
     }
 

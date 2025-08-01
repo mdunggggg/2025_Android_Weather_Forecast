@@ -10,19 +10,21 @@ class ExamplePresenter(
     private val teamRepository: ITeamRepository
 ) : BasePresenter<ExampleContract.View>(), ExampleContract.Presenter {
 
-    private val scope = CoroutineScope(Dispatchers.Main)
 
     override fun loadMyTeams() {
-        scope.launch {
-            val teams = withContext(Dispatchers.IO) {
-                teamRepository.getMyTeams()
+        presenterScope.launch {
+            val teams = try {
+                withContext(Dispatchers.IO) {
+                    teamRepository.getMyTeams()
+                }
+            } catch (e: Exception) {
+                getView()?.showError("Failed to load teams: ${e.message}")
+                return@launch
             }
             if (isViewAttached()) {
                 getView()?.showMyTeams(teams)
             }
-            else {
-                getView()?.showError("View is not attached")
-            }
+
         }
     }
 
