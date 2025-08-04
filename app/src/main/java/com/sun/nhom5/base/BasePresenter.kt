@@ -1,4 +1,4 @@
-package com.example.android_template.base
+package com.sun.nhom5.base
 
 import java.lang.ref.WeakReference
 import kotlinx.coroutines.CoroutineScope

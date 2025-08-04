@@ -1,4 +1,4 @@
-package com.example.android_template.example
+package com.sun.nhom5.example
 
 import kotlinx.coroutines.delay
 

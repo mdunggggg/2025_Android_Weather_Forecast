@@ -1,4 +1,4 @@
-package com.example.android_template.base
+package com.sun.nhom5.base
 
 import android.os.Bundle
 import android.view.LayoutInflater

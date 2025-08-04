@@ -1,8 +1,8 @@
-package com.example.android_template.example
+package com.sun.nhom5.example
 
 import android.widget.Toast
-import com.example.android_template.base.BaseActivity
-import com.example.android_template.databinding.ActivitySampleBinding
+import com.sun.nhom5.base.BaseActivity
+import com.sun.nhom5.databinding.ActivitySampleBinding
 
 class SampleActivity : BaseActivity<ActivitySampleBinding, ExamplePresenter>(), ExampleContract.View {
 

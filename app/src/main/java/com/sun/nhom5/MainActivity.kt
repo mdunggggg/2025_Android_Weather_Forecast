@@ -1,10 +1,10 @@
-package com.example.android_template
+package com.sun.nhom5
 
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.example.android_template.databinding.ActivityMainBinding
-import com.example.android_template.example.SampleActivity
+import com.sun.nhom5.databinding.ActivityMainBinding
+import com.sun.nhom5.example.SampleActivity
 
 class MainActivity : AppCompatActivity() {
 

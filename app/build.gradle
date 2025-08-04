@@ -19,11 +19,11 @@ detekt {
 
 
 android {
-    namespace 'com.example.android_template'
+    namespace 'com.sun.nhom5'
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.example.android_template"
+        applicationId "com.sun.nhom5"
         minSdk 24
         targetSdk 33
         versionCode 1

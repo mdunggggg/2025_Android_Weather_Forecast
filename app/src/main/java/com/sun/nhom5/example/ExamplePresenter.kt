@@ -1,6 +1,6 @@
-package com.example.android_template.example
+package com.sun.nhom5.example
 
-import com.example.android_template.base.BasePresenter
+import com.sun.nhom5.base.BasePresenter
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext

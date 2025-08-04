@@ -1,4 +1,4 @@
-package com.example.android_template.base
+package com.sun.nhom5.base
 
 /**
  * Base contract interface for MVP pattern

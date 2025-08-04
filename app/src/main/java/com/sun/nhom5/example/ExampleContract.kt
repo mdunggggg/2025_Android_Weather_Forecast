@@ -1,6 +1,6 @@
-package com.example.android_template.example
+package com.sun.nhom5.example
 
-import com.example.android_template.base.BaseContract
+import com.sun.nhom5.base.BaseContract
 
 interface ExampleContract : BaseContract<ExampleContract.View, ExampleContract.Presenter> {
     interface View : BaseContract.View {
