@@ -6,7 +6,7 @@ interface ITeamRepository {
     suspend fun getMyTeams(): List<String>
 }
 
-class TeamRepository : ITeamRepository{
+class TeamRepository : ITeamRepository {
     override suspend fun getMyTeams(): List<String> {
         delay(1000)
         return listOf(

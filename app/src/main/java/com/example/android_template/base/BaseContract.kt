@@ -6,14 +6,12 @@ package com.example.android_template.base
  * @param P The type of presenter
  */
 interface BaseContract<V, P> {
-    
+
     interface View {
         fun showLoading()
         fun hideLoading()
         fun showError(message: String)
     }
-    
-    interface Presenter<V> {
 
-    }
-} 
+    interface Presenter<V>
+}

@@ -1,11 +1,6 @@
 package com.example.android_template.example
 
-import android.os.Bundle
 import android.widget.Toast
-import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
-import com.example.android_template.R
 import com.example.android_template.base.BaseActivity
 import com.example.android_template.databinding.ActivitySampleBinding
 
@@ -34,10 +29,10 @@ class SampleActivity : BaseActivity<ActivitySampleBinding, ExamplePresenter>(), 
     }
 
     override fun showMyTeams(teams: List<String>) {
-       Toast.makeText(
+        Toast.makeText(
             this,
-           teams.joinToString(", "),
-            Toast.LENGTH_LONG
+            teams.joinToString { it },
+            Toast.LENGTH_SHORT
         ).show()
     }
 
@@ -59,5 +54,4 @@ class SampleActivity : BaseActivity<ActivitySampleBinding, ExamplePresenter>(), 
             Toast.LENGTH_LONG
         ).show()
     }
-
 }
