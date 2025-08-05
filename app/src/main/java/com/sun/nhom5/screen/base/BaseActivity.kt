@@ -1,4 +1,4 @@
-package com.sun.nhom5.base
+package com.sun.nhom5.screen.base
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity

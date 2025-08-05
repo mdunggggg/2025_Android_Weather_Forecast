@@ -1,4 +1,4 @@
-package com.sun.nhom5.example
+package com.sun.nhom5.screen.example
 
 import kotlinx.coroutines.delay
 

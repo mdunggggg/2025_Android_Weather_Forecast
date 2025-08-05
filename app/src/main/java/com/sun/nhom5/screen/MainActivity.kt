@@ -1,4 +1,4 @@
-package com.sun.nhom5
+package com.sun.nhom5.screen
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
@@ -6,6 +6,7 @@ import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.setupWithNavController
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import com.sun.nhom5.R
 import com.sun.nhom5.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {

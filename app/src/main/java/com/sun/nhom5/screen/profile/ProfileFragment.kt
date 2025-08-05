@@ -1,4 +1,4 @@
-package com.example.android_template.presentation.profile
+package com.sun.nhom5.screen.profile
 
 import android.os.Bundle
 import android.view.LayoutInflater

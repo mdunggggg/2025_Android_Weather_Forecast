@@ -1,6 +1,6 @@
-package com.sun.nhom5.example
+package com.sun.nhom5.screen.example
 
-import com.sun.nhom5.base.BaseContract
+import com.sun.nhom5.screen.base.BaseContract
 
 interface ExampleContract : BaseContract<ExampleContract.View, ExampleContract.Presenter> {
     interface View : BaseContract.View {

@@ -74,11 +74,3 @@ tasks.withType(io.gitlab.arturbosch.detekt.Detekt).configureEach {
     autoCorrect = false
     ignoreFailures = true
 }
-
-tasks.withType(io.gitlab.arturbosch.detekt.Detekt).configureEach {
-    jvmTarget = "1.8"
-    parallel = true
-    buildUponDefaultConfig = true
-    autoCorrect = true
-    ignoreFailures = true
-}

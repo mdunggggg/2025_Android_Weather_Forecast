@@ -1,4 +1,4 @@
-package com.sun.nhom5.base
+package com.sun.nhom5.screen.base
 
 import java.lang.ref.WeakReference
 import kotlinx.coroutines.CoroutineScope

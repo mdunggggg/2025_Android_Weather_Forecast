@@ -1,6 +1,6 @@
-package com.sun.nhom5.example
+package com.sun.nhom5.screen.example
 
-import com.sun.nhom5.base.BasePresenter
+import com.sun.nhom5.screen.base.BasePresenter
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext

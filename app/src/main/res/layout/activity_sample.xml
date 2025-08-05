@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".example.SampleActivity">
+    tools:context=".screen.example.SampleActivity">
 
     <Button
         android:id="@+id/loadMyTeamsButton"
